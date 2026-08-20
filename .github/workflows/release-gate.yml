@@ -15,10 +15,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11", "3.12"]
+        python-version:
+          - "3.11"
+          - "3.12"
 
     steps:
-      - name: TDS identity: 24f3000211@ds.study.iitm.ac.in
+      - name: "TDS identity: 24f3000211@ds.study.iitm.ac.in"
         run: echo "TDS identity: 24f3000211@ds.study.iitm.ac.in"
 
       - name: Checkout
