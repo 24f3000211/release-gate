@@ -16,7 +16,8 @@ jobs:
           - "3.12"
     steps:
       - name: "TDS identity: 24f3000211@ds.study.iitm.ac.in"
-        run: echo "TDS identity: 24f3000211@ds.study.iitm.ac.in"
+        run: |
+          echo "TDS identity: 24f3000211@ds.study.iitm.ac.in"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
